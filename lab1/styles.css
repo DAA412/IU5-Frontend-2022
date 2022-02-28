@@ -1,0 +1,68 @@
+body {
+    background-color: blueviolet;
+    padding: 10px;
+    width: 2500px;
+    height: 1400px;
+    margin: 0 auto;
+    
+}
+td#identified {
+    background-color: DodgerBlue;
+    color:#fff 
+  }
+ 
+  a:link{
+      background-color: aqua;
+  }
+img {
+    width: 320px;
+    border: 1px solid #fff
+  }
+  .box {
+    background: red;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .box:empty {
+    background: lime;
+  }
+
+.textodin{
+    color: aliceblue;
+    font-size: 170%;
+}
+.textdva{
+    color: rgba(251, 206, 177, 4);
+    font-size: 15pt;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+}
+.container{
+    display: inline-flex;
+}
+  #heart {
+    
+    position: relative;
+    width: 100px; 
+    height: 80px;
+    }
+    #heart::before, 
+    #heart::after {
+    content: "";
+    position: absolute; 
+    left: 50px; 
+    top: 0;
+    width: 50px; 
+    height: 80px;
+    background: #EE4156;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%;
+    }
+    #heart::after {
+    left: 0;
+    transform: rotate(45deg); 
+    transform-origin: 100% 100%;
+    }
