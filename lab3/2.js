@@ -9,6 +9,25 @@
  */
 function getMinMax(str) {
     // code here
+    let a =[];
+    let t = "";
+    for (let i = 0; i < str.length; i++) 
+    {   
+        if (!isNaN(Number(str[i]))||(str[i] === "-")||(str[i] === "."))
+            {                 
+                t = t + str[i];
+            }   
+        if ((str[i] === ",")||(str[i] === " ")||(i === str.length-1))
+            {  
+                Number(t);
+                a.push(t);
+                String(t);
+                t = ""; 
+            }
+    }
+    a = String(a);
+    a = a.split(/,| |]/);
+    a = a.filter(b => b != "")
+    return {'min': Math.min.apply(null, a), 'max': Math.max.apply(null, a)};
 }
-
 module.exports = getMinMax;

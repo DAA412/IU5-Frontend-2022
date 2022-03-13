@@ -9,6 +9,16 @@
 
 function multiplyArray(arr, n) {
     // code here
+    let a = [];
+    for (let i = 0; i < arr.length; i++)
+    {
+        if(typeof(arr[i]) === 'number')
+        {
+            arr[i] = arr[i]*n;
+        }
+        a.push(arr[i]);
+    }
+    return a;
 }
 
 module.exports = multiplyArray;
