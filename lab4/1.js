@@ -7,6 +7,26 @@
  */
 function getAnagramms(arr) {
     //code here
+    let result = [];
+    let keys = [];
+    let map = new Map();
+    let a = 0;
+    for (let i = 0; i < arr.length; i++) 
+    {
+        let Word = arr[i].toLowerCase().split("").sort().join("");
+        if (keys.includes(Word)) 
+            map.get(Word).push(arr[i]);
+        else
+        {
+            map.set(Word, [arr[i]]);
+            keys.push(Word);
+        }
+    }
+    keys.forEach(function(elem) 
+    {
+        result.push(map.get(elem));
+    });
+    return result;
 }
 
 module.exports = getAnagramms;
