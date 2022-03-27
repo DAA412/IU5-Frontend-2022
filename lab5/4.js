@@ -13,8 +13,16 @@
  * memozedAdd(2) -> {cache: true, result: 4}
  */
 
-function memoize(func) {
+function memoize(func) 
+{
     //code here
+    let res;
+    return f = (...args) => 
+    {
+        const  cache= (res === func(...args));
+        res = func(...args);
+        return { 'cache': cache, 'result': res };
+    };
 }
 
 module.exports = memoize;
