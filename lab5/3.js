@@ -6,8 +6,10 @@
  * customBind(function() {this.a + this.b}, {a: 1, b2})() -> 3
  */
 
-function customBind(f, context) {
+function customBind(f, context) 
+{
     //code here
+    return (...args) => f.apply(context, args);
 }
 
 module.exports = customBind;
