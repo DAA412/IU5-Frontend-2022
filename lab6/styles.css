@@ -3,7 +3,6 @@ body{
     justify-content: space-between;
     background-color: sandybrown
 }
-
 #but1 {
     height:100px;
     width:100px;
@@ -56,11 +55,9 @@ body{
     text-align: left;
     border: #ddd solid 1px;
 }
-
 .ddMenu a:hover {
     background-color: black;
 }
-
 #empty{
     display: flex;
     justify-content: center;

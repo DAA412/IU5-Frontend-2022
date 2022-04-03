@@ -1,7 +1,6 @@
 //task1
 const firstButton = document.getElementById("but1");
 firstButton.onclick = () => (firstButton.style.background = ('#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase()));
-
 //task2
 const task2 = document.getElementById("task2");
 let timer = 0;
@@ -14,7 +13,6 @@ task2.onmouseover = () => {
   }, 1000);
 };
 task2.onmouseleave = () => clearInterval(timerId);
-
 //task3
 const dropMenu = document.getElementById('menu');
 function Content()
@@ -26,7 +24,6 @@ window.onclick = (event) =>
         if (dropMenu.classList.contains('reveal')) dropMenu.classList.remove('reveal');
     }
 }
-
 //task4
 const ball = document.getElementById("circle");
 const zone = document.getElementById("empty");
