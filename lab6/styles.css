@@ -55,9 +55,11 @@ body{
     text-align: left;
     border: #ddd solid 1px;
 }
+
 .ddMenu a:hover {
     background-color: black;
 }
+
 #empty{
     display: flex;
     justify-content: center;
@@ -73,4 +75,4 @@ body{
     width: 30px;
     border-radius: 15px;
     position: absolute;
-}
+} 
