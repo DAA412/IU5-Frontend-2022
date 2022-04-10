@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lab7</title>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Погода</title>
+</head>
+
+<body onload="fillWeather('москва');">
+    <div class="topic">
+        <img id="img1" src="images/weather.png">
+        <div class="title">Вэзэр нау</div>
+        <div class="sBlock">
+            <input id="sBox" type="text" placeholder="Укажите город">
+            <img id="sButton" src="images/search.png">
+        </div>
+    </div>
+    <div id="wBlock">
+        <div id="wCard">
+            <div id="cityName"></div>
+            <div class="container">
+                <div class="left">
+                    <div class="parametrs">
+                        <div>Ощущается как: </div>
+                        <div>Max/Min: </div>
+                        <div>Влажность: </div>
+                        <div>Давление: </div>
+                    </div>
+                    <div class="values">
+                        <div id="feel"></div>
+                        <div id="range"></div>
+                        <div id="humidity"></div>
+                        <div id="pressure"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="degrees"></div>
+                    <div id="description"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="lab7.js"></script>
+
 </html>

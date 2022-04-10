@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    background: url(./images/bg.jpg);
+    position: relative;
+    display: inline;
+}
+
+#sButton{
+    width: 38px;
+    filter: invert(1);
+}
+
+.topic {
+    background: url(./images/db.jpg);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+#img1 {
+    height: 80px;
+    margin-left: -18px;
+}
+
+.title {
+
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+    font-size: 45px;
+}
+
+.sBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+}
+
+#sBox {
+    width: 225px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 40px;
+    width: 500px;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+
+.right {
+    max-width: 350px;
+}
+
+.values {
+    margin-top: 5px;
+}
+
+#wCard {
+    width: 840px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 40px;
+    color: #fff;
+    border-radius: 40px;
+    border: 1px solid black ;
+}
+
+#cityName {
+    font-size: 60px;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+
+#degrees {
+    font-size: 130px;
+    text-align: right;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+
+#description {
+    text-align: right;
+    font-size: 40px;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+
+@media screen and (max-width: 1000px) {
+    .topic {
+        padding: 10px;
+        font-size: 18px;
+        height: 40px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    #img1 {
+        height: 40px;
+        margin-left: -9px;
+    }
+    .sBlock {
+        width: 130px;
+    }
+    #sButton {
+        width: 24px;
+        
+    }
+    #sBox {
+        width: 100px;
+        height: 17px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .left {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 250px;
+    }
+    #wCard {
+        width: 70%;
+        height: auto;
+        min-height: 142.4px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 25px;
+        border: 1px solid black ;
+    }
+    #cityName {
+        font-size: 30px;
+    }
+    #degrees {
+        font-size: 70px;
+    }
+    #description {
+        font-size: 20px;
+    }
+    .values {
+        margin-top: 2px;
+    }
+}
