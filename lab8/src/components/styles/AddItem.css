@@ -1,0 +1,11 @@
+.addItemButton {
+    background: plum;
+    border-radius: 12px;
+    color: #ffffff;
+    border: none;
+    height: 25px;
+}
+.addItemForm {
+    margin-bottom: 15px;
+    text-align: center;
+} 

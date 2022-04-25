@@ -1,0 +1,40 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: lightblue;
+    width: 400px;
+}
+input {
+    margin-right: 8px;
+}
+.todoDelBut {
+    background: plum;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
+.done {
+    text-decoration: line-through;
+}
+.editTodo {
+    border: none;
+    margin: 5px;
+    background: none;
+    font-size: 20px;
+}
+.editTodo:focus,
+.editTodo:hover {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background: plum;
+} 
