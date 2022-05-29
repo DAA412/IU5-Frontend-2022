@@ -10,7 +10,7 @@ export const UserInfo :React.FC<UserInfoProps> = ({backBut,data}) =>
             <button id="backBut" onClick={()=>backBut()}>Назад</button>
             <div className="userProfMini">
                 <div id="text2">А вот и нужный человечек</div>
-                <img id="profilePic" src={data.avatar_url}/>
+                <img id="profilePic" src={data.avatar_url} alt=""/>
                 <div className="userProps">Логин: {data.login}</div>
                 <div className="userProps">Подписчики: {data.followers}</div>
                 <div className="userProps">Подписан на: {data.following}</div>

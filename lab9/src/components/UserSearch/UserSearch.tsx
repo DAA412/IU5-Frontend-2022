@@ -36,7 +36,7 @@ export const UserSearch:React.FC<UserSearchProps>  = ({user,backBut}) => {
     if(loadingCondition)
         return(
         <div className="loading">
-            <img id="load" src = {load}/>
+            <img id="load" src = {load} alt=""/>
             <div id="text3">Загрузка..</div>
         </div>)
     else

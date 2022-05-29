@@ -10,7 +10,7 @@ export const Menu:React.FC<MenuProps>  = ({userID,inputText}) =>
     return(
         <div className="menu">
             <div className="text1">Система поиска аккуанта GitHub</div>
-            <img id = "menuPic" src={search}/>
+            <img id = "menuPic" src={search} alt=""/>
             <div className="menu1">
                 <input id = "search"
                 onKeyPress = {(e:any) => 
@@ -22,5 +22,5 @@ export const Menu:React.FC<MenuProps>  = ({userID,inputText}) =>
             </div>
         </div>)
 } 
-
+ 
 
