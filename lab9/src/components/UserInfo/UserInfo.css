@@ -1,0 +1,89 @@
+#backBut
+{
+    width: 60px;
+    height: 25px;
+    background-color: salmon;
+    border-radius: 8px;
+    border-color: salmon;
+}
+#profilePic
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.userProfile
+{
+    background-color: plum;
+    display: flex;
+    padding: 20px;
+    height: 700px;
+}
+.userProfMini
+{
+    margin-left: 35vw;
+    margin-top: 22vh;
+}
+.userProps 
+{
+    color: salmon;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#text2
+{
+    text-align: center;
+    color: salmon;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -5 vh;
+    margin-bottom: 6vh;
+    margin-left: -2vw;
+}
+@media screen and (max-width: 1200px) {
+.userProfMini
+{
+    margin-left: 33vw;
+}
+#text2,
+.userProps
+{
+    font-size: 21px;
+}
+}
+@media screen and (max-width: 1000px) {
+.userProfMini
+{
+    margin-left: 31vw;
+}
+#text2,
+.userProps
+{
+
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 800px) {
+.userProfMini
+{
+    margin-left: 26vw;
+}
+#text2,
+.userProps
+{
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 500px) {
+.userProfMini
+{
+    margin-left: 22vw;
+}
+#text2,
+.userProps
+{
+    font-size: 16px;
+}
+}

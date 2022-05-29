@@ -1,0 +1,92 @@
+.menu
+{
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    justify-items:baseline;
+}
+.menu1
+{
+    background-color: plum;
+    justify-content: center;
+    height: 700px;
+    margin-left: 39vw;
+}
+#search
+{
+    background-color: salmon;
+    border-radius: 5px;
+    border-color: salmon;
+}
+#searchBut
+{
+    width: 60px;
+    height: 25px;
+    background-color: salmon;
+    border-radius: 8px;
+    border-color: salmon;
+    margin-left: 1vw;
+}
+#menuPic
+{
+    background-color: salmon;
+    height: 250px;
+    width: 220px;
+    margin-top: 20vh;
+    border-radius: 20px;
+    margin-left: 40vw;
+    margin-bottom: 2vh;
+}
+.text1
+{
+    margin-top: 20vh;
+    margin-bottom: -15vh;
+    margin-left: -2vw;
+    color: salmon;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+.menu1
+{
+    margin-left: 37vw;
+}
+#menuPic
+{
+    margin-left: 38vw;
+}
+}
+@media screen and (max-width: 1000px) {
+.menu1
+{
+    margin-left: 35vw;
+}
+#menuPic
+{
+    margin-left: 36vw;
+}
+}
+@media screen and (max-width: 800px) {
+.menu1
+{
+    margin-left: 32vw;
+}
+#menuPic
+{
+    margin-left: 33vw;
+}
+}
+@media screen and (max-width: 500px) {
+.menu1
+{
+    margin-left: 29vw;
+}
+#menuPic
+{
+    margin-left: 30vw;
+}
+}
