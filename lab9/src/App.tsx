@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import {User} from "./components/User/User";
+import "./App.css"
 
-import logo from "./logo.svg";
-import "./App.css";
+export const App = () => 
+{
+    const[currentUser,setUser] = useState("");
+    const[currentInput,setInput] = useState("")
 
-export const App = () => {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+    function getInputText(id: string)
+    {
+        setInput(()=>id)
+    }
+    function getUserId()
+    {
+        setUser(()=>currentInput.trim())
+    }
+    function getBack()
+    {
+        setUser(()=>"")
+        setInput(()=>"")
+    }
+    return (<User user={currentUser} userID={getUserId} inputText={getInputText} backBut={getBack}/>);
 };

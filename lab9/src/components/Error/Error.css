@@ -1,0 +1,91 @@
+.errorClass
+{
+    background-color: plum;
+    display: inline-flexbox;
+    padding: 20px;
+    height: 700px;
+}
+#errorBut
+{
+    width: 60px;
+    height: 25px;
+    background-color: salmon;
+    border-radius: 8px;
+    border-color: salmon;
+}
+#error1
+{
+    height: 500px;
+    width: 700px;
+    margin-left: 17vw;
+    border-radius: 100px;
+}
+.text
+{
+    margin-top: 3vh;
+    text-align: center;
+    color: salmon;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.miniError
+{
+    display: flex;
+    background-color: plum;
+}
+
+@media screen and (max-width: 1200px) {
+    #error1
+{
+    height: 450px;
+    width: 600px;
+    margin-left: 13vw;
+    border-radius: 100px;
+
+}
+.text
+{
+    font-size: 21px;
+}
+}
+@media screen and (max-width: 1000px) {
+    #error1
+{
+    height: 400px;
+    width: 550px;
+    margin-left: 9vw;
+    border-radius: 100px;
+}
+.text
+{
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 800px) {
+    #error1
+{
+    height: 300px;
+    width: 450px;
+    margin-left: 5vw;
+    border-radius: 100px;
+}
+.text
+{
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 500px) {
+    #error1
+{
+    height: 200px;
+    width: 300px;
+    margin-left: 2vw;
+    border-radius: 100px;
+}
+.text
+{
+    font-size: 16px;
+}
+}
+
