@@ -1,8 +1,14 @@
 import React from "react";
-import {UserProps} from "../User/UserTypes";
-import { Menu } from "../Menu/Menu";
-import { UserSearch } from "../UserSearch/UserSearch";
+import { Menu } from "./Menu";
+import { UserSearch } from "./UserSearch";
 
+ interface UserProps
+{
+    user : string;
+    userID : Function;
+    inputText : Function;
+    backBut: Function;
+}; 
 
 export const User :React.FC<UserProps> = ({user,userID,inputText,backBut}) => 
 {

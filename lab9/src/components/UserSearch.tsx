@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
-import {UserSearchProps} from "./UserSearchTypes";
-import { UserInfo } from "../UserInfo/UserInfo";
-import { Error } from "../Error/Error";
+import { UserInfo } from "./UserInfo";
+import { Error } from "./Error";
 import "./UserSearch.css"
-import load from "../img/load.gif"
+import load from "./img/load.gif"
 
+interface UserSearchProps
+{
+    user : string;
+    backBut : Function;
+}; 
 
 
 export const UserSearch:React.FC<UserSearchProps>  = ({user,backBut}) => {
@@ -20,12 +24,14 @@ export const UserSearch:React.FC<UserSearchProps>  = ({user,backBut}) => {
             headers: {Authorization: `token ${process.env.REACT_APP_API_TOKEN}`,},
         }).then((data)=>
         {
+            
             if(data.status !== 200 )
                 setError(true);
             else
             { return data.json();}
         }).then((data) =>
             {
+                console.log(data);
                 setUserData(data);
                 setLoading(false);
             })
@@ -40,5 +46,8 @@ export const UserSearch:React.FC<UserSearchProps>  = ({user,backBut}) => {
             <div id="text3">Загрузка..</div>
         </div>)
     else
+    {
         return(<UserInfo data={userData} backBut={backBut}/>)
+    }
+
 } 

@@ -1,7 +1,8 @@
 import React from "react";
-import {ErrorProps} from "./ErrorTypes";
-import error from "../img/error.jpg"
+import error from "./img/error.jpg"
 import "./Error.css";
+
+interface ErrorProps {backBut : Function;}; 
 
 
 export const Error:React.FC<ErrorProps> = ({backBut}) => 
