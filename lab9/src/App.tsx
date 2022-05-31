@@ -24,8 +24,8 @@ export const App = () =>
     }
     return (
         <Routes>
-            <Route path={process.env.REACT_APP_DEV === "true" ? "/user" : "/lab9/build"} element={<User user={currentUser} userID={getUserId} inputText={getInputText} backBut={getBack}/>}></Route>
-            <Route path={process.env.REACT_APP_DEV === "true" ? "/" : "/lab9/build"} element={<Main />}></Route>
+            <Route path={process.env.REACT_APP_DEV === "true" ? "/user" : "/user"} element={<User user={currentUser} userID={getUserId} inputText={getInputText} backBut={getBack}/>}></Route>
+            <Route path={process.env.REACT_APP_DEV === "true" ? "/lab9/build/index.html" : "/lab9/build/index.html"} element={<Main />}></Route>
         </Routes>
     );
 };
