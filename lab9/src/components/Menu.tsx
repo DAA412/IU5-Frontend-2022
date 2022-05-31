@@ -24,7 +24,7 @@ export const Menu:React.FC<MenuProps>  = ({userID,inputText}) =>
                 {inputText(e.target.value)}} />
                 <button id="searchBut" onClick={()=>userID()}>Найти</button>
             </div>
-            <Link to = {"/"}  className="homeLink">Домой;)</Link>
+            <Link to = {"/lab9/build/index.html"}  className="homeLink">Домой;)</Link>
             
         </div>)
 } 
