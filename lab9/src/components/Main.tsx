@@ -1,4 +1,5 @@
 import React from "react";
+import main from "./img/main.png"
 import "./Menu.css"
 import { Link} from 'react-router-dom';
 
@@ -13,7 +14,7 @@ export const Main:React.FC<MainProps>  = ({}) =>
         <div className="header">1</div>
         <div className="menu">
             <div className="text1">Помогу найти тебе любого пользователя GitHub;)</div>
-            <img id = "mainPic" src="./img/main.png" alt=""/>
+            <img id = "mainPic" src={main} alt=""/>
             <Link to = {"/user"}  className="searchLink">Чего ты ждешь? Жми скорее</Link>
          <div className="footer">1</div>   
         </div></div>)
